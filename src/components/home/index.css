@@ -1,3 +1,79 @@
-.home-heading {
-    color: var(--theme-primary-color);
+.home-bg-container {
+    color: var(--theme-page-text-color);
+    background-color: var(--theme-page-bg-color);
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    --gap:1em
+    gap: var(--gap);
+    padding: 0 var(--total-page-pd-sm);
+    @media (min-width: 620px) {
+        padding-inline: var(--total-page-pd-md);
+    }
+    @media (min-width: 1050px) {
+        padding-inline: var(--total-page-pd-lg);
+    }
+}
+
+.home-content-bg-container {
+}
+.home-greeting-text {
+    font-size: clamp(0.2rem, 1vw + 1.5rem, 2.3rem);
+}
+.name {
+    color: #737373;
+    position: relative;
+}
+.name::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-top: 5px solid var(--theme-page-text-color);
+    left: -10%;
+    transform: rotate(-2deg);
+    bottom: -14px;
+    border-radius: 13%;
+    height: 12px;
+}
+.home-content-para {
+    color: ;
+    font-size: clamp(0.1rem, 1vw + 0.7rem, 1.23rem);
+    font-weight: lighter;
+}
+.home-content-btn-bg-container {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.home-btn {
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+}
+.cv-btn {
+    background-color: #df580c;
+}
+.get-in-touch-btn {
+    background-color: #434343;
+}
+.home-profile-bg-container {
+    text-align: center;
+}
+
+@media (min-width: 827px) {
+    .home-bg-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .home-content-bg-container {
+        flex: 1 1 calc(70% - var(--gap));
+    }
+    .home-profile-bg-container {
+        order: 1;
+        flex: 1 1 calc(30% - var(--gap));
+    }
 }
