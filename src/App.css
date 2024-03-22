@@ -1,0 +1,53 @@
+:root {
+    --total-page-pd-sm: clamp(0.5em, 1vw + 1.44em, 2.5em);
+    --total-page-pd-md: clamp(0.6em, 1vw + 1.8em, 3em);
+    --total-page-pd-lg: clamp(0.7em, 1vw + 3.9em, 6em);
+    --page-section-pt: clamp(1.4em, 1vw + 2.5em, 6em);
+    --page-section-pb: clamp(1.4em, 1vw + 2.5em, 6em);
+    --theme-primary-color: rgb(46, 175, 255);
+    --theme-secondary-color: rgb(255, 69, 0);
+    --theme-success-color: rgb(40, 167, 69);
+    --theme-warning-color: rgb(255, 193, 7);
+    --theme-info-color: rgb(23, 162, 184);
+    --theme-link-color: rgb(57, 153, 255);
+    --toggle-theme-transition: background-color 0.4s ease-out;
+}
+
+.light-theme {
+    --theme-page-bg-color: rgb(0, 0, 0);
+    --theme-page-text-color: rgb(255, 255, 255);
+    --theme-container-bg-color: rgb(245, 245, 245);
+    --theme-header-bg-color: rgb(255, 255, 255);
+    --theme-primary-text-color: rgb(51, 51, 51);
+    --theme-second-text-color: rgb(102, 102, 102);
+    --theme-header-text-color: rgb(34, 34, 34);
+    --theme-border-color: hsl(0, 1%, 56%);
+    --theme-divide-line-color: rgb(221, 221, 221);
+    --theme-input-bg-color: rgb(255, 255, 255);
+    --theme-input-text-color: rgb(0, 0, 0);
+    --theme-input-border-color: rgb(191, 191, 191);
+    --theme-input-placeholder-text-color: rgb(136, 136, 136);
+    --theme-primary-color: rgb(46, 175, 255);
+    --theme-secondary-color: rgb(255, 69, 0);
+    --theme-success-color: rgb(40, 167, 69);
+    --theme-warning-color: rgb(255, 193, 7);
+    --theme-info-color: rgb(23, 162, 184);
+    --theme-link-color: rgb(57, 153, 255);
+    --toggle-theme-transition: background-color 0.4s ease-out;
+}
+
+.dark-theme {
+    --theme-page-bg-color: rgb(255, 255, 255);
+    --theme-page-text-color: rgb(39, 40, 41);
+    --theme-container-bg-color: rgb(30, 30, 30);
+    --theme-header-bg-color: rgb(39, 40, 41);
+    --theme-primary-text-color: rgb(255, 255, 255);
+    --theme-second-text-color: rgb(204, 204, 204);
+    --theme-header-text-color: rgb(255, 255, 255);
+    --theme-border-color: rgb(128, 128, 128);
+    --theme-divide-line-color: rgb(68, 68, 68);
+    --theme-input-bg-color: rgb(51, 51, 51);
+    --theme-input-text-color: rgb(255, 255, 255);
+    --theme-input-border-color: rgb(85, 85, 85);
+    --theme-input-placeholder-text-color: gb(136, 136, 136);
+}
