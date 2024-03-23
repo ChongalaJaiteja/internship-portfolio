@@ -12,13 +12,19 @@ const About = () => {
                     opacity: 1,
                     transition: { duration: 1.5, type: "spring" },
                 }}
-                viewport={{ amount: 0.5 }}
             >
                 <LazyImageLoader
                     imageSrc={"hand.png"}
                     altName="hand"
                     className="about-section-img"
                 />
+                <div className="circle-img-bg-container">
+                    <LazyImageLoader
+                        imageSrc={"yellow-circle.png"}
+                        altName="hand"
+                        className="circle-img"
+                    />
+                </div>
             </motion.div>
             <motion.div
                 className="about-section-content-bg-container"
@@ -28,7 +34,6 @@ const About = () => {
                     x: 0,
                     transition: { duration: 1.5, type: "spring" },
                 }}
-                viewport={{ amount: 0.5 }}
             >
                 <div className="about-section-title-container">
                     <h1 className="about-secion-main-heading">
@@ -69,6 +74,7 @@ const About = () => {
                     girlfriend, watching series, sketching or messing around on
                     something inspired by YouTube tutorials.
                 </p>
+                <hr className="about-bottom-hr-line" />
             </motion.div>
         </div>
     );

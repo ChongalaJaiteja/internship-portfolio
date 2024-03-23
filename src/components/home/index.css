@@ -3,7 +3,7 @@
     background-color: var(--theme-page-bg-color);
     display: flex;
     flex-direction: column;
-    --gap: 1em;
+    --gap: 3em;
     gap: var(--gap);
     padding: 0 var(--total-page-pd-sm);
     @media (min-width: 620px) {
@@ -27,8 +27,7 @@
     top: -104%;
     left: 0;
     background-image: linear-gradient(to right, #32f6f6, rgb(255, 146, 146));
-    border-radius: 45px 10px 10px 30px;
-    /* border-radius: 100% 0% 100% 0% / 58% 100% 0% 42% ; */
+    border-radius: 92% 0% 100% 100% / 90% 100% 0% 0%;
     padding: 0 0.3em;
 }
 .name {

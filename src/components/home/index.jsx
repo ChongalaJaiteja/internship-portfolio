@@ -14,7 +14,6 @@ const Home = () => {
                     x: 0,
                     transition: { duration: 1.5, type: "spring" },
                 }}
-                viewport={{ amount: 0.5 }}
             >
                 <LazyImageLoader
                     imageSrc={"profile.png"}
@@ -30,7 +29,6 @@ const Home = () => {
                     x: 0,
                     transition: { duration: 1.5, type: "spring" },
                 }}
-                viewport={{ amount: 0.5 }}
             >
                 <h1 className="home-greeting-text" data-text="Hello!">
                     I'm <span className="name">Anish</span> 👋

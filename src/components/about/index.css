@@ -10,10 +10,12 @@
     @media (min-width: 1050px) {
         padding-inline: var(--total-page-pd-lg);
     }
+    position: relative;
 }
 
 .about-section-img-bg-container {
     display: none;
+    position: relative;
 }
 .about-section-img {
 }
@@ -55,12 +57,23 @@
     font-size: clamp(0.2rem, 1vw + 1.5rem, 2.6rem);
 }
 .hr-line {
-    width: 30px;
-    flex-grow: 1;
-    max-width: 30rem;
+    width: 100%;
+    flex: 1 1 50%;
 }
 .about-section-content {
     line-height: 1.89rem;
     color: var(--theme-second-text-color);
     font-weight: normal;
+}
+
+.circle-img-bg-container {
+    position: absolute;
+    bottom: -1%;
+    width: min(60%, 20rem);
+}
+
+.about-bottom-hr-line {
+    width: 100%;
+    max-width: 30rem;
+    margin-top: 1.5em;
 }
