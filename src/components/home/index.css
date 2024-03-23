@@ -1,7 +1,7 @@
 .home-bg-container {
     color: var(--theme-page-text-color);
     background-color: var(--theme-page-bg-color);
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     --gap:1em
@@ -48,16 +48,34 @@
 
 .home-btn {
     color: white;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    padding: 0.5em 1em;
+    border: none;
+    border-radius: 10px;
+    padding: 0.7em 0;
+    width: min(30%, 20rem);
+    margin-top: 1.8em;
     cursor: pointer;
+    font-size: clamp(0.5rem, 1vw + 0.76rem, 1.3rem);
+    transition: transform 0.23s linear;
+    border: 2px solid white;;
+    box-shadow: 1px 1px 3px 1px var(--theme-page-text-color);
 }
+
+
 .cv-btn {
     background-color: #df580c;
 }
+.cv-btn:hover {
+    transform: translateY(-4px);
+    background-color: transparent;
+    border-color: #df580c;
+}
 .get-in-touch-btn {
     background-color: #434343;
+}
+.get-in-touch-btn:hover {
+    transform: translateY(-4px);
+    background-color: transparent;
+    border-color: #434343;
 }
 .home-profile-bg-container {
     text-align: center;
@@ -75,5 +93,33 @@
     .home-profile-bg-container {
         order: 1;
         flex: 1 1 calc(30% - var(--gap));
+        margin-bottom: 5em;
+        text-align: right;
+    }
+}
+
+.social-media-bg-container {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 0.7em;
+}
+
+.social-media-icon {
+    font-size: clamp(0.5rem, 1vw + 1.2rem, 1.7rem);
+    transition: transform 0.23s linear;
+    cursor: pointer;
+}
+
+.social-media-icon:hover {
+    transform: scale(1.1);
+}
+
+@media (min-width:1062px) {
+    .social-media-bg-container {
+        position:fixed;
+        left: 2%;
+        bottom: 0;
+        flex-direction: column;
     }
 }

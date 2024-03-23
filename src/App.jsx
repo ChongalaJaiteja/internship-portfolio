@@ -1,11 +1,11 @@
 import "./App.css";
-import Home from "./components/home";
+import MainPage from "./components/mainpage";
 import { ThemeContextProvider } from "./context/themeContext";
 
 function App() {
     return (
         <ThemeContextProvider>
-            <Home />
+            <MainPage />
         </ThemeContextProvider>
     );
 }
